@@ -50,7 +50,7 @@ def _upload():
 _upload()
 ```
 
-## The text used for the word cloud displayed below is the **Vassals of the Lode-Star by Gardner F. Fox**
+### The text used for the word cloud displayed below is the **Vassals of the Lode-Star by Gardner F. Fox**
 
 ### The text was found through **The Project Gutenberg**
 
