@@ -106,4 +106,4 @@ plt.show()
 ---
 ---
 # Below is an example of the word cloud generated from the selected text
-![Word Cloud Example](./wordcloud.png)
+![Word Cloud Example](./word_cloud.png)
