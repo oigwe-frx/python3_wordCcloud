@@ -49,10 +49,8 @@ def _upload():
 
 _upload()
 ```
-
-### The text used for the word cloud displayed below is the **Vassals of the Lode-Star by Gardner F. Fox**
-
-### The text was found through **The Project Gutenberg**
+The text used for the word cloud displayed below is the **Vassals of the Lode-Star by Gardner F. Fox**
+The text was found through **The Project Gutenberg**
 
 ## Below is a function that iterates through the uploaded file, removes punctuation, and counts the frequency of each word. The function will ignore any word that does not contain only letters, as well as overly utilized words like "and" or "the"
 
