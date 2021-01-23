@@ -11,7 +11,7 @@ Originally run in Jupyter Notebook
 
 ---
 ---
-# Here are the installs and imports needed for the word cloud script and textuploader widget
+## Below are the installs and imports needed for the word cloud script and textuploader widget
 
 ```
 !pip install wordcloud
@@ -29,7 +29,7 @@ import io
 import sys
 ```
 
-# This is code for the the uploader widget
+## Below is code for the the uploader widget
 
 ```
 def _upload():
@@ -50,11 +50,11 @@ def _upload():
 _upload()
 ```
 
-# The text used for the word cloud displayed below is the **Vassals of the Lode-Star by Gardner F. Fox**
+## The text used for the word cloud displayed below is the **Vassals of the Lode-Star by Gardner F. Fox**
 
-# The text was found through **The Project Gutenberg**
+### The text was found through **The Project Gutenberg**
 
-# Below is a function that iterates through the uploaded file, removes punctuation, and counts the frequency of each word. The function will ignore any word that does not contain only letters, as well as overly utilized words like "and" or "the"
+## Below is a function that iterates through the uploaded file, removes punctuation, and counts the frequency of each word. The function will ignore any word that does not contain only letters, as well as overly utilized words like "and" or "the"
 
 ```
 def calculate_frequencies(file_contents):
@@ -79,7 +79,7 @@ def calculate_frequencies(file_contents):
     words_no_punct = [word for word in words if word.isalpha()]
     ```
 
-    # A dictionary will be used as a frequency table to catalog word repetition
+    ## A dictionary will be used as a frequency table to catalog word repetition
 
     ```
     word_freq = {}
@@ -90,19 +90,21 @@ def calculate_frequencies(file_contents):
         else: 
             word_freq[word.lower()] = 1
     ```
-    # Below are the modules used by wordcloud
+    ## Below are the methods used by wordcloud
     
     ```
     cloud = wordcloud.WordCloud()
     cloud.generate_from_frequencies(word_freq)
     return cloud.to_array()
     ```
-
-# Display your wordcloud image
+    
+# Used to display the wordcloud image
 
 myimage = calculate_frequencies(file_contents)
 plt.imshow(myimage, interpolation = 'nearest')
 plt.axis('off')
 plt.show()
 ```
+---
+---
 # Below is an example of the word cloud generated from the selected text
